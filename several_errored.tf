@@ -1,12 +1,13 @@
-resource "null_resource" "errored_1" {
+resource "null_resource" "valid-1" {
 triggers = {
 trigger = var.var
 }
 }
 
 variable "var" {
-default = "errored_tag1"
+default = "valid-1"
 }
 
 output "out" {
-value = var.var
+  value = var.var
+}
