@@ -1,13 +1,12 @@
-resource "null_resource" "valid-1" {
+resource "null_resource" "invalid-2" {
 triggers = {
 trigger = var.var
 }
 }
 
 variable "var" {
-default = "valid-1"
+default = "invalid-2"
 }
 
 output "out" {
   value = var.var
-}
